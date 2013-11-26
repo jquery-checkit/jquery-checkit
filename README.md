@@ -103,6 +103,4 @@ Call the script!
 
 ## Contact
 
-You can contact us on CodeCanyon or via email.
-
-Email: gergoo.mail@gmail.com
+Email: info@jquery-checkit.com
