@@ -103,4 +103,5 @@ Call the script!
 
 ## Contact
 
+Website: http://jquery-checkit.com
 Email: info@jquery-checkit.com
