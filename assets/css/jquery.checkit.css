@@ -1,0 +1,59 @@
+
+/* GLOBALS */
+
+* {
+  font-family: sans-serif;
+}
+
+body {
+  padding: 20px;
+}
+
+/* Filter */
+
+#checkit-filter-container {
+  margin-bottom: 20px;
+}
+
+#checkit-filter-container div {
+  margin-bottom: 10px;
+}
+
+#checkit-filter-container label {
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+}
+
+#checkit-filter-container input[type="text"],
+#checkit-filter-container input[type="number"],
+#checkit-filter-container input[type="date"],
+#checkit-filter-container select {
+  display: inline;
+  margin-right: 20px;
+  padding: 5px;
+  min-width: 180px;
+}
+
+
+/* Buttons */
+
+.button {
+  padding: 12px 15px;
+  font-weight: bold;
+  border: none;
+}
+
+.green-button {
+  background: #99cc00;
+  color: #fff;
+}
+
+.blue-button {
+  background: #00bbdd;
+  color: #fff;
+}
+.red-button {
+  background: #d95959;
+  color: #fff;
+}

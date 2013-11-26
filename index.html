@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>CheckIt! - jQuery Plugin</title>
+
+  <link rel="stylesheet" href="assets/css/jquery.checkit.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+	<script src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="assets/js/latinise.js"></script>
+  <script src="assets/js/checkit/jquery.checkit.js"></script>
+	<script src="assets/js/main.js"></script>
+</head>
+<body>
+
+	<h2>CheckIt! - jQuery plugin</h2>
+
+	<!-- CheckIt control  -->
+	<div id="checkit-control">
+		<form action="" method="post">
+      
+      
+      <!-- CheckIt filter container -->
+      <div id="checkit-filter-container">
+        <div id="checkit-quick-filter">
+          <h3>Quick filter</h3>
+
+          <div class="quick-filters">
+            <div>
+              <label for="search-text">Text</label>
+              <input type="text" name="search_text" id="search-text">
+            </div>
+          </div>
+          <input type="submit" name="checkit_quick_filter" value="CheckIt!" class="button green-button">
+          <input type="button" name="display_advanced_filter" value="Advanced filter" class="button blue-button">
+        </div>
+
+        <div id="checkit-advanced-filter">
+          <h3>Advanced filter</h3>
+          <div class="advanced-filters"></div>
+          <input type="submit" name="checkit_advanced_filter" value="CheckIt!" class="button green-button">
+          <input type="button" name="display_quick_filter" value="Quick filter" class="button blue-button">
+        </div>
+      </div>
+      <!-- /CheckIt filter container -->
+      
+      
+			<input type="submit" name="checkit_all" value="CheckIt! all" class="button green-button">
+			<input type="submit" name="checkit_clear" value="Clear selection" class="button red-button">
+			<input type="button" name="checkit_filter" value="Filter" class="button blue-button">
+		</form>
+	</div>
+	<!-- /CheckIt control  -->
+
+	<!-- Data table -->
+	<form action="" method="post">
+		<table id="checkit-table" class="table">
+			<thead>
+				<tr>
+					<td>&nbsp;</td>
+					<td data-type="string"><p>Name</p></td>
+					<td data-type="string"><p>Email</p></td>
+					<td data-type="string"><p>Phone</p></td>
+					<td data-type="numeric"><p>Age</p></td>
+					<td data-type="string"><p>Gender</p></td>
+					<td data-type="date"><p>Register date</p></td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><p><input type="checkbox" name="check_user_1" value="1"></p></td>
+					<td><p>John Doe</p></td>
+					<td><p>info@johndoe.com</p></td>
+					<td><p>+11234568978</p></td>
+					<td><p>25</p></td>
+					<td><p>Male</p></td>
+					<td><p>11/10/2013</p></td>
+				</tr>
+				<tr>
+					<td><p><input type="checkbox" name="check_user_2" value="1"></p></td>
+					<td><p>Jane Doe</p></td>
+					<td><p>info@janedoe.com</p></td>
+					<td><p>+11256465855</p></td>
+					<td><p>28</p></td>
+					<td><p>Female</p></td>
+					<td><p>04/02/2013</p></td>
+				</tr>
+				<tr>
+					<td><p><input type="checkbox" name="check_user_3" value="1"></p></td>
+					<td><p>James Wattson</p></td>
+					<td><p>info@jameswattson.com</p></td>
+					<td><p>+14567854222</p></td>
+					<td><p>30</p></td>
+					<td><p>Male</p></td>
+					<td><p>09/10/2010</p></td>
+				</tr>
+				<tr>
+					<td><p><input type="checkbox" name="check_user_4" value="1"></p></td>
+					<td><p>Sherlock Holmes</p></td>
+					<td><p>info@sherlockholmes.com</p></td>
+					<td><p>+1654789545</p></td>
+					<td><p>25</p></td>
+					<td><p>Male</p></td>
+					<td><p>08/02/2013</p></td>
+				</tr>
+				<tr>
+					<td><p><input type="checkbox" name="check_user_5" value="1"></p></td>
+					<td><p>Paul Taylor</p></td>
+					<td><p>info@paultailor.com</p></td>
+					<td><p>+1654579854</p></td>
+					<td><p>45</p></td>
+					<td><p>Male</p></td>
+					<td><p>08/12/2012</p></td>
+				</tr>
+				<tr>
+					<td><p><input type="checkbox" name="check_user_6" value="1"></p></td>
+					<td><p>Emma Johnson</p></td>
+					<td><p>info@emmajohnson.com</p></td>
+					<td><p>+15465788454</p></td>
+					<td><p>27</p></td>
+					<td><p>Female</p></td>
+					<td><p>09/5/2011</p></td>
+				</tr>
+				<tr>
+					<td><p><input type="checkbox" name="check_user_7" value="1"></p></td>
+					<td><p>David Smith</p></td>
+					<td><p>info@davidsmith.com</p></td>
+					<td><p>+15479826365</p></td>
+					<td><p>42</p></td>
+					<td><p>Male</p></td>
+					<td><p>12/07/2013</p></td>
+				</tr>
+				<tr>
+					<td><p><input type="checkbox" name="check_user_8" value="1"></p></td>
+					<td><p>Alfred Wilson</p></td>
+					<td><p>info@alfredwilson.com</p></td>
+					<td><p>+1548795432</p></td>
+					<td><p>35</p></td>
+					<td><p>Male</p></td>
+					<td><p>04/05/2010</p></td>
+				</tr>
+				<tr>
+					<td><p><input type="checkbox" name="check_user_9" value="1"></p></td>
+					<td><p>Christine Williams</p></td>
+					<td><p>info@christinewilliams.com</p></td>
+					<td><p>+1325798548</p></td>
+					<td><p>25</p></td>
+					<td><p>Female</p></td>
+					<td><p>08/06/2011</p></td>
+				</tr>
+				<tr>
+					<td><p><input type="checkbox" name="check_user_10" value="1"></p></td>
+					<td><p>Kate Bell</p></td>
+					<td><p>info@katebell.com</p></td>
+					<td><p>+1654884589</p></td>
+					<td><p>28</p></td>
+					<td><p>Female</p></td>
+					<td><p>10/11/2012</p></td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+	<!-- /Data table -->
+
+</body>
+</html>
